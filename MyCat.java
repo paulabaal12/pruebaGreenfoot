@@ -13,6 +13,11 @@ public class MyCat extends Cat
      */
     public void act()
     {
+         sleep(2); //gato duerma
+        if(isBored())
+        {
+           shoutHooray ();
+        }
         eat ();
         dance ();
         sleep(2);
@@ -25,5 +30,8 @@ public class MyCat extends Cat
         eat ();
         walkRight (5);
         walkLeft (5);
-    }    
+    } 
 }
+
+
+    
